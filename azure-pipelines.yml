@@ -11,9 +11,9 @@ pool:
   
 variables:
   - group: ios-pipeline
-    scheme: 'SeeEyePeeDee'
-    sdk: 'iphoneos'
-    configuration: 'Release'
+      scheme: 'SeeEyePeeDee'
+      sdk: 'iphoneos'
+      configuration: 'Release'
 
 steps:
 - task: Xcode@5
