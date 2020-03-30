@@ -17,7 +17,7 @@ steps:
 - task: Xcode@5
   displayName: 'Running XC Test'
   inputs:
-    actions: 'test'
+    actions: 'build'
     sdk: 'iphonesimulator'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
