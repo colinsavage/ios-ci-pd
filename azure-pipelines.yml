@@ -11,16 +11,19 @@ pool:
   
 variables:
   - group: ios-pipeline
-      scheme: 'SeeEyePeeDee'
-      sdk: 'iphoneos'
-      configuration: 'Release'
+  - name: scheme
+    value: 'SeeEyePeeDee'
+  - name: sdk
+    value: 'iphoneos'
+  - name: configuration
+    value: 'Release'
 
 steps:
 - task: Xcode@5
   inputs:
-    sdk: '$(sdk)'
-    scheme: '$(scheme)'
-    configuration: '$(configuration)'
+    sdk: '$(ios-pipeline.sdk)'
+    scheme: '$(ios-pipeline.scheme)'
+    configuration: '$(ios-pipeline.configuration)'
     xcodeVersion: 'default'
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
