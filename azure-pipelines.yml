@@ -10,7 +10,7 @@ pool:
   vmImage: 'macOS-latest'
   
 variables:
-  -group: ios-pipeline
+  - group: ios-pipeline
     scheme: 'SeeEyePeeDee'
     sdk: 'iphoneos'
     configuration: 'Release'
