@@ -25,5 +25,5 @@ steps:
     scheme: '$(ios-pipeline.scheme)'
     configuration: '$(ios-pipeline.configuration)'
     xcodeVersion: 'default'
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+    exportPath: '$(agent.buildDirectory)/output/$(ios-pipeline.sdk)/$(ios-pipeline.configuration)'
     packageApp: false
