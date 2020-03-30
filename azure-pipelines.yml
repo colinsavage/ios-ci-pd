@@ -18,7 +18,7 @@ steps:
   displayName: 'Running XC Test'
   inputs:
     actions: 'test'
-    sdk: 'iphonesimulator'
+    sdk: 'iphoneos'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
     xcodeVersion: 'default'
