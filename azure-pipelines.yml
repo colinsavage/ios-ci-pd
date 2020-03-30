@@ -26,6 +26,9 @@ steps:
     packageApp: false
     signingOption: 'auto'
     publishJUnitResults: 'build/reports/junit.xml'
+    destinationTypeOption: 'simulators' # Optional. Options: simulators, devices
+    destinationSimulators: 'iPhone 11' # Optional
+    
 - task: Xcode@5
   displayName: 'Build app'
   inputs:
