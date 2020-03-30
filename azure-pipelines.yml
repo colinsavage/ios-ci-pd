@@ -12,10 +12,22 @@ pool:
 variables:
   scheme: 'SeeEyePeeDee'
   sdk: 'iphoneos'
-  configuration: 'Release'
-
+  configuration: 'Debug'
 steps:
 - task: Xcode@5
+  displayName: 'Running XC Test'
+  inputs:
+    actions: 'test'
+    sdk: 'iphonesimulator'
+    scheme: '$(scheme)'
+    configuration: '$(configuration)'
+    xcodeVersion: 'default'
+    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+    packageApp: false
+    signingOption: 'auto'
+    publishJUnitResults: 'build/reports/junit.xml'
+- task: Xcode@5
+  displayName: 'Build app'
   inputs:
     sdk: '$(sdk)'
     scheme: '$(scheme)'
