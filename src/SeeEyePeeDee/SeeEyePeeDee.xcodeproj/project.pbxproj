@@ -14,6 +14,7 @@
 		67419801242C430400FE04EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67419800242C430400FE04EC /* Assets.xcassets */; };
 		67419804242C430400FE04EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67419802242C430400FE04EC /* LaunchScreen.storyboard */; };
 		6741980F242C430400FE04EC /* SeeEyePeeDeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6741980E242C430400FE04EC /* SeeEyePeeDeeTests.swift */; };
+		6789A6922431BE610028CA03 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6789A6912431BE610028CA03 /* ImageClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		6741980A242C430400FE04EC /* SeeEyePeeDeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeeEyePeeDeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6741980E242C430400FE04EC /* SeeEyePeeDeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeEyePeeDeeTests.swift; sourceTree = "<group>"; };
 		67419810242C430400FE04EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6789A6912431BE610028CA03 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				67419800242C430400FE04EC /* Assets.xcassets */,
 				67419802242C430400FE04EC /* LaunchScreen.storyboard */,
 				67419805242C430400FE04EC /* Info.plist */,
+				6789A6912431BE610028CA03 /* ImageClassifier.swift */,
 			);
 			path = SeeEyePeeDee;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6789A6922431BE610028CA03 /* ImageClassifier.swift in Sources */,
 				674197FC242C430100FE04EC /* ViewController.swift in Sources */,
 				674197F8242C430100FE04EC /* AppDelegate.swift in Sources */,
 				674197FA242C430100FE04EC /* SceneDelegate.swift in Sources */,
@@ -362,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S73W9UFSG;
 				INFOPLIST_FILE = SeeEyePeeDee/Info.plist;
@@ -372,6 +377,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = za.org.savage.SeeEyePeeDee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7S73W9UFSG;
 				INFOPLIST_FILE = SeeEyePeeDee/Info.plist;
@@ -391,6 +398,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = za.org.savage.SeeEyePeeDee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
