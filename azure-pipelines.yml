@@ -10,20 +10,16 @@ pool:
   vmImage: 'macOS-latest'
   
 variables:
-  - group: ios-pipeline
-  - name: scheme
-    value: 'SeeEyePeeDee'
-  - name: sdk
-    value: 'iphoneos'
-  - name: configuration
-    value: 'Release'
+  scheme: 'SeeEyePeeDee'
+  sdk: 'iphoneos'
+  configuration: 'Release'
 
 steps:
 - task: Xcode@5
   inputs:
-    sdk: '$(ios-pipeline.sdk)'
-    scheme: '$(ios-pipeline.scheme)'
-    configuration: '$(ios-pipeline.configuration)'
+    sdk: '$(sdk)'
+    scheme: '$(scheme)'
+    configuration: '$(configuration)'
     xcodeVersion: 'default'
     exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
     packageApp: false
