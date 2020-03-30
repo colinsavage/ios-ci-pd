@@ -8,6 +8,11 @@ trigger:
 
 pool:
   vmImage: 'macOS-latest'
+  
+variables:
+  scheme: ''
+  sdk: 'iphoneos'
+  configuration: 'Release'
 
 steps:
 - script: echo Hello, world!
